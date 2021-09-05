@@ -13,16 +13,30 @@ const reducer = (state, action) =>{
             // logic of adding item to 
             return {
                 ...state,           // returning the state
-                basket: [...state.basket, action.item]   // overwrite the value of basket with a new value
-            }
+                basket: [...state.basket, action.item],   // overwrite the value of basket with a new value
+            };
       //      break;
         case 'REMOVE_FROM_BASKET':
             // logic of removing an item 
-            return {state}; 
+            // here we cloned the basket
+            let newBasket = [...state.basket];
+
+            // we check to see if product exist, 
+            const index =  state.basket.findIndex((basketItem) => basketItem.id === action.id);
+            
+            if (index >= 0){
+                //item exists in basket, remove it ...........
+                newBasket.splice(index,1);
+            }
+            else{
+                console.warn(`cant remove product (id: ${action.id}) as its not in basket`);
+            }
+            
+            return {...state, basket: newBasket,}; 
          //   break;
         default :
             return state;
     }
-}
+};
 
 export default reducer;   // this helps to use reducer outside
