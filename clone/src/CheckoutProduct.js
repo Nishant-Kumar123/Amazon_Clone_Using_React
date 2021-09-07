@@ -1,4 +1,5 @@
 import React from 'react';
+import CurrencyFormat from 'react-currency-format';
 import "./CheckoutProduct.css";
 import { useStateValue } from './StateProvider';
 
@@ -21,8 +22,24 @@ function CheckoutProduct({id,title,image,price,rating}){
             <div className="checkoutProduct__info">
                 <p className="checkoutProduct__title">{title}</p>
                 <p className ="checkoutProduct__price">
-                    <small>₹</small>
-                    <strong>{price}</strong>
+                    {/* <small>₹</small>
+                    <strong>{price}</strong> */}
+
+
+                <CurrencyFormat 
+                renderText = {(value) => (
+                    <strong>{`${value}`}</strong>
+                    )}
+
+
+                    decimalScale={2}
+                    value={price}  
+                    displayType={'text'}
+                    thousandSeparator = {true}
+                    thousandSpacing={'2s'}
+                    fixedDecimalScale = {true}
+                    prefix={'₹'}
+                />
                     
                 </p>
                 <div className="checkoutProduct__rating">

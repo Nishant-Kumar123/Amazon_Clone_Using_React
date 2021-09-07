@@ -5,10 +5,20 @@ export const initialState = {
     user: null,
 };
 
-// state = data layer || action = manipulates data layer || switch = check against bunch of cases
+// here, we using the concept of selectors to get the total amount
+export const getBasketTotal = (basket) =>
+    basket?.reduce((amount, item) => item.price + amount,0);  
+
+// state = data layer || action = manipulates= data layer || switch = check against bunch of cases
 
 const reducer = (state, action) =>{
     switch(action.type){
+        case 'SET_USER':        
+        // update the user when logged in and logged out....
+            return {
+                ...state,
+                user: action.user,
+            };
         case 'ADD_TO_BASKET':
             // logic of adding item to 
             return {

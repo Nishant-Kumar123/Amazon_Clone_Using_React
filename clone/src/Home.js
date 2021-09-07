@@ -16,7 +16,7 @@ function Home(){
                 <Product
                     id="1234123421"
                     title="Urban Furnishing Sofa Cums Bed Furniture (5x6) Three Seater for Home & Living Room (Blue)"
-                    price={"6,999.00"}
+                    price={12399.00}
                     rating={5}
                     image="https://m.media-amazon.com/images/I/61F8-dmWr+S._AC_UL480_FMwebp_QL65_.jpg"
                 />
@@ -24,7 +24,7 @@ function Home(){
                 <Product
                     id="1234123422"
                     title="ASUS ZenBook Pro Duo Intel Core i7-10750H 10th Gen 15.6 inch | 4K UHD OLED Touchscreen Laptop (32GB RAM/1TB NVMe SSD/Windows 10/6GB NVIDIA GeForce RTX 2060 Graphics/Blue/2.5 Kg) UX581LV-H2034T"
-                    price={"2,24,494.00"}
+                    price={224494.00}
                     rating={5}
                     image="https://m.media-amazon.com/images/I/91VR2ZXL9LL._AC_UY327_FMwebp_QL65_.jpg"
                 />
@@ -34,7 +34,7 @@ function Home(){
                 <Product
                     id="1234123423"
                     title="Cracking the Coding Interview: 189 Programming Questions and Solutions | Indian Edition"
-                    price={"581"}
+                    price={581.00}
                     rating={5}
                     image="https://m.media-amazon.com/images/I/81-7dH4JHmL._AC_UY327_FMwebp_QL65_.jpg"
                 />
@@ -42,7 +42,7 @@ function Home(){
                 <Product
                     id="1234123424"
                     title="New Apple iPhone 11 (256GB) - Green"
-                    price={"74,399.00"}
+                    price={74399.00}
                     rating={5}
                     image="https://m.media-amazon.com/images/I/71w3oJ7aWyL._AC_UY327_FMwebp_QL65_.jpg"
                 />
@@ -50,7 +50,7 @@ function Home(){
                 <Product
                     id="4321234921"
                     title="Rolex Cosmograph Dayton Dial Watch with Google Wear OS, 24x7 Activity and Sleep Tracking (No-Cost EMI Available)"
-                    price={"66,07,362.32"}
+                    price={6607362.00}
                     rating={5}
                     image="https://images-eu.ssl-images-amazon.com/images/I/51gG1E-CGvL._SX300_SY300_QL70_FMwebp_.jpg"
                 />
@@ -60,7 +60,7 @@ function Home(){
                 <Product
                     id="9844234251"
                     title="Samsung 108 cm (43 inches) Crystal 4K Pro Series Ultra HD Smart LED TV UA43AUE70AKLXL (Black) (2021 Model)"
-                    price={"37,899.00"}
+                    price={37899.00}
                     rating={5}
                     image="https://m.media-amazon.com/images/I/61GwJAhftvS._AC_UY327_FMwebp_QL65_.jpg"
                 />
